@@ -1,0 +1,18 @@
+# 1. Ignore everything
+*
+
+# 2. Allow the directories themselves
+!*/
+
+# 3. Whitelist the CONTENTS of the folders
+!niri/**
+!noctalia/**
+!ghostty/**
+!nvim/**
+!waybar/**
+!yazi/**
+
+# 4. Whitelist specific files
+!.gitignore
+!mimeapps.list
+!user-dirs.dirs
