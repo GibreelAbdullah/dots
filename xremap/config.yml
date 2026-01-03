@@ -1,0 +1,9 @@
+keymap:
+  - name: Global Edit Keys
+    application:
+      not: [com.mitchellh.ghostty]
+    remap:
+      Super-c: C-c
+      Super-v: C-v
+      Super-x: C-x
+
