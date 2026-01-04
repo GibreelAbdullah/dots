@@ -372,7 +372,7 @@ binds {
     Mod+E { spawn "ghostty" "-e" "zsh" "-is" "-c" "'y'"; } //open yazi
     Ctrl+Shift+Escape { spawn "ghostty" "-e" "btm"; } //open htop
     Mod+T hotkey-overlay-title="Open Ghostty" { spawn "ghostty"; }
-    Alt+Space hotkey-overlay-title="Application Launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Mod+Space hotkey-overlay-title="Application Launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+B hotkey-overlay-title="Run Browser" { spawn "zen-browser"; }
     Ctrl+G { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
     Mod+W { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "random"; }

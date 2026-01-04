@@ -6,4 +6,14 @@ keymap:
       Super-c: C-c
       Super-v: C-v
       Super-x: C-x
-
+  - name: Overview Key
+    remap:
+      f20: 
+        launch: ["niri", "msg", "action", "toggle-overview"]
+modmap:
+  - name: Super Tap for Overview
+    remap:
+      Super_L:
+        held: Super_L
+        alone: [f20] # We map it to a dummy key like F20
+        alone_timeout_millis: 180 # Time window to count as a "tap"
