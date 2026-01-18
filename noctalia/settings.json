@@ -108,7 +108,7 @@
                 },
                 {
                     "compactMode": false,
-                    "diskPath": "/home",
+                    "diskPath": "/",
                     "id": "SystemMonitor",
                     "showCpuTemp": true,
                     "showCpuUsage": true,

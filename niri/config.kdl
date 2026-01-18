@@ -332,6 +332,11 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id=r#"org.gnome.Calculator"#
+    open-floating true
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
@@ -365,7 +370,8 @@ binds {
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
-
+    
+    Mod+Shift+S { toggle-window-floating; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Period { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "emoji"; }
@@ -421,8 +427,8 @@ binds {
     Mod+L     { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
-    // Mod+Ctrl+Down  { move-window-down; }
-    // Mod+Ctrl+Up    { move-window-up; }
+    Mod+Ctrl+Down  { move-window-down; }
+    Mod+Ctrl+Up    { move-window-up; }
     Mod+Ctrl+Right { move-column-right; }
     Mod+Ctrl+H     { move-column-left; }
     Mod+Ctrl+J     { move-window-down; }
@@ -472,8 +478,8 @@ binds {
     Mod+I              { focus-workspace-up; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
-    Mod+Ctrl+Down      { move-column-to-workspace-down; }
-    Mod+Ctrl+Up        { move-column-to-workspace-up; }
+    Mod+Alt+Down      { move-column-to-workspace-down; }
+    Mod+Alt+Up        { move-column-to-workspace-up; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+Page_Down { move-window-to-workspace-down; }
@@ -592,7 +598,7 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+S { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
