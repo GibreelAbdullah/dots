@@ -11,6 +11,7 @@
 !nvim/**
 !xremap/**
 !yazi/**
+!ente/**
 
 # 4. Whitelist specific files
 !.gitignore

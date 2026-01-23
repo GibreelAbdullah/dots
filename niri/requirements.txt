@@ -1,0 +1,1 @@
+fzf ente-auth-bin ente-cli-bin gnome-keyring libsecret xdg-user-dirs
