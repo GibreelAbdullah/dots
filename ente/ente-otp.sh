@@ -1,5 +1,10 @@
 #!/bin/bash
 
+set -x
+# Optional: Customize the prompt for verbose output (makes it stand out)
+export PS4='+ [$(date +"%H:%M:%S")] '
+
+
 # Define the export file location
 # (Using the standard Ente CLI export path)
 EXPORT_FILE="/home/gibreel_pc/Projects/Key/ente_auth.txt"
